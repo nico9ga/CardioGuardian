@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCD6F0"
+    tools:context=".Home">
+
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="129dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/consejos"
+        android:src="@drawable/group_33764"
+        android:text="@string/concejos"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.881" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="88dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/consejos"
+        android:src="@drawable/group_33764"
+        android:text="@string/concejos"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="50dp"
+        android:contentDescription="@string/cardio"
+        android:src="@drawable/group_33759"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="50dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group_33758" />
+
+    <TextView
+        android:id="@+id/TextConsejos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:autofillHints="Concejoss"
+        android:ems="10"
+        android:fontFamily="@font/amaranth_bold"
+        android:inputType="text"
+        android:text="@string/consejos"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton7"
+        app:layout_constraintStart_toStartOf="@+id/imageButton7"
+        app:layout_constraintTop_toTopOf="@+id/imageButton7"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/textNoticias"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:autofillHints="Concejoss"
+        android:ems="10"
+        android:fontFamily="@font/amaranth_bold"
+        android:inputType="text"
+        android:text="Noticias"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton8"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton8"
+        app:layout_constraintStart_toStartOf="@+id/imageButton8"
+        app:layout_constraintTop_toTopOf="@+id/imageButton8"
+        tools:ignore="LabelFor" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/Sirena"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="50dp"
+            android:background="#00FFFFFF"
+            android:elevation="1dp"
+            android:src="@drawable/sirena"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/casa"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="50dp"
+            android:background="#00FFFFFF"
+            android:elevation="1dp"
+            android:src="@drawable/casa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/Agregar"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="0dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="#00FFFFFF"
+            android:elevation="1dp"
+            android:src="@drawable/group_33739"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/Sirena"
+            app:layout_constraintStart_toEndOf="@+id/casa"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton8"
+        app:layout_constraintStart_toStartOf="@+id/imageButton8"
+        app:layout_constraintTop_toTopOf="@+id/imageButton8"
+        app:srcCompat="@drawable/noticias_image" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton7"
+        app:srcCompat="@drawable/consejos_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
